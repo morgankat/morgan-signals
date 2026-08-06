@@ -123,7 +123,7 @@ function formatSignalMessage(label, result) {
   const arrow = result.direction === 'BUY' ? '🟢' : '🔴';
   const decimals = label.includes('JPY') ? 3 : label.includes('BTC') || label.includes('ETH') ? 2 : 5;
 
-  return `${arrow} *${result.direction} ALERT — ${label}*\n\n` +
+  return `🧠 *Morgan AI Signal*\n${arrow} *${result.direction} — ${label}*\n\n` +
     `Entry: \`${result.entry.toFixed(decimals)}\`\n` +
     `Stop Loss: \`${result.sl.toFixed(decimals)}\`\n` +
     `TP1: \`${result.tp1.toFixed(decimals)}\`\n` +
